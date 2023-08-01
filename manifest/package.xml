@@ -19,7 +19,6 @@
 		<name>CustomMetadata</name>
 	</types>
 	<types>
-		<members>Case</members>
 		<members>Payment_Info__c</members>
 		<members>Payment_Information__mdt</members>
 		<name>CustomObject</name>
@@ -28,5 +27,9 @@
 		<members>*</members>
 		<name>NamedCredential</name>
 	</types>
+	<types>
+        <members>GOVUK_pay</members>
+        <name>ExternalCredential</name>
+    </types>
 	<version>55.0</version>
 </Package>

@@ -6,7 +6,7 @@ public class PaymentInvocableTest {
 		PaymentInvocable.InputVariables input = new PaymentInvocable.InputVariables();
 		Case testCase = new Case();
 		//testCase.RecordType.Name = 'test';
-		testCase.Total_Price__c = 60;
+		// testCase.Total_Price__c = 60;
 		insert testCase;
 		//List<Case> ids = [SELECT Id FROM Case LIMIT 1];
 		input.caseIds = testCase.Id;

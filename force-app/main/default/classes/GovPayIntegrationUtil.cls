@@ -1,13 +1,13 @@
 public with sharing class GovPayIntegrationUtil {
 	public static void createPayment(String caseId) {
-		Case selectedCase = [SELECT id,Total_Price__c FROM case WHERE Id = :caseId];
-		Decimal selectedCasePrice = selectedCase.Total_Price__c.setscale(0);
+		//Case selectedCase = [SELECT id,Total_Price__c FROM case WHERE Id = :caseId];
+		//Decimal selectedCasePrice = selectedCase.Total_Price__c.setscale(0);
 
 		GovPayReq request = new GovPayReq();
 		String uniqueCode = generateRandomString();
 		Payment_Information__mdt paymentInformation = Payment_Information__mdt.getInstance('Createpayment');
 
-		request.amount = selectedCasePrice * 100;
+		request.amount = 100 * 100;
 		request.reference = uniqueCode;
 		request.language = paymentInformation.Language__c;
 		request.moto = paymentInformation.Moto__c;
