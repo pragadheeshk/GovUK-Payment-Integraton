@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>GovPayIntegrationUtil</members>
+		<members>GovPayReq</members>
+		<members>GovPayReqTest</members>
+		<members>GovPayRestResource</members>
+		<members>GovPayRestResourceTest</members>
+		<members>GovPaySaveResponse</members>
+		<members>GovPaySaveResponseTest</members>
+		<members>GovPayWebhookWrapper</members>
+		<members>GovPayWebhookWrapperTest</members>
+		<members>PaymentInvocable</members>
+		<members>PaymentInvocableTest</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Payment_Information.Createpayment</members>
+		<name>CustomMetadata</name>
+	</types>
+	<types>
+		<members>Case</members>
+		<members>Payment_Info__c</members>
+		<members>Payment_Information__mdt</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NamedCredential</name>
+	</types>
+	<version>55.0</version>
+</Package>

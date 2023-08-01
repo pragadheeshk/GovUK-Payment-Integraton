@@ -1,0 +1,8 @@
+@IsTest
+public with sharing class GovPayWebhookWrapperTest {
+	static testMethod void testParse() {
+		String json = '{\"webhook_message_id\":\"mje1ra1r0291f71551307s1t0v\",\"created_date\":\"2023-07-11T06:57:36.319Z\",\"resource_id\":\"b6v4tr8kdic43imfp0gv686dnv\",\"api_version\":1,\"resource_type\":\"PAYMENT\",\"event_type\":\"card_payment_succeeded\",\"resource\":{\"moto\":false,\"email\":\"ramki.ravi@adapt-iq.com\",\"state\":{\"status\":\"success\",\"finished\":true},\"amount\":18000,\"language\":\"en\",\"metadata\":{\"type\":\"Pest Control\",\"paymentNumber\":\"Payment 1\"},\"reference\":\"laaDamGT20230711122620\",\"payment_id\":\"b6v4tr8kdic43imfp0gv686dnv\",\"return_url\":\"https://eastleigh-customer-portal.my.site.com/EastleighSite/s/thankyou-page\",\"description\":\"Payment for service (Service Request - Pest Control)\",\"card_details\":{\"card_type\":\"credit\",\"card_brand\":\"Visa\",\"expiry_date\":\"12/25\",\"billing_address\":{\"city\":\"London\",\"line1\":\"34\",\"line2\":\"\",\"country\":\"GB\",\"postcode\":\"SO31 4BH\"},\"cardholder_name\":\"Testing payment\",\"last_digits_card_number\":\"1111\",\"first_digits_card_number\":\"444433\"},\"created_date\":\"2023-07-11T06:56:20.297Z\",\"refund_summary\":{\"status\":\"pending\",\"amount_available\":18000,\"amount_submitted\":0},\"delayed_capture\":false,\"payment_provider\":\"sandbox\",\"settlement_summary\":{}}}';
+		GovPayWebhookWrapper obj = GovPayWebhookWrapper.parse(json);
+		System.assert(obj != null);
+	}
+}
