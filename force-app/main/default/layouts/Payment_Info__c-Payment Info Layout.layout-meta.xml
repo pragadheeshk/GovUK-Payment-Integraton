@@ -139,10 +139,6 @@
                 <behavior>Edit</behavior>
                 <field>Payment_Number__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Business_License_Application__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -185,22 +181,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <relatedLists>
-        <fields>Name</fields>
-        <fields>Account</fields>
-        <fields>LicenseType</fields>
-        <fields>AppliedDate</fields>
-        <fields>Status</fields>
-        <relatedList>BusinessLicenseApplication.Payment_Info__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>Name</fields>
-        <fields>Account</fields>
-        <fields>LicenseType</fields>
-        <fields>AppliedDate</fields>
-        <fields>Status</fields>
-        <relatedList>BusinessLicenseApplication.Final_Payment__c</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
