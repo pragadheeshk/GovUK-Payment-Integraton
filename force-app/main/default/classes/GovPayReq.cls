@@ -3,15 +3,9 @@ public class GovPayReq {
 	public String authorisation_mode;
 	public String description;
 	public String language;
-	public Metadata metadata = new Metadata();
 	public Boolean moto;
 	public String reference;
 	public String return_url;
-
-	public class Metadata {
-		public String type;
-		public String paymentNumber;
-	}
 
 	public static GovPayReq parse(String json) {
 		return (GovPayReq) System.JSON.deserialize(json, GovPayReq.class);

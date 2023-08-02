@@ -9,6 +9,7 @@ public with sharing class GovPayIntegrationUtil {
 
 		request.amount = 100 * 100;
 		request.reference = uniqueCode;
+        request.description='Mandatory Field';
 		request.language = paymentInformation.Language__c;
 		request.moto = paymentInformation.Moto__c;
 		request.authorisation_mode = paymentInformation.Authorization_Mode__c;
@@ -30,6 +31,7 @@ public with sharing class GovPayIntegrationUtil {
 
 	public static void saveResponse(String jsonResponse, String caseId) {
 		GovPaySaveResponse responseObj = GovPaySaveResponse.parse(jsonResponse);
+        system.debug('responseObj---------->'+responseObj);
 		createPaymentRecord(responseObj, caseId);
 	}
 
@@ -66,8 +68,8 @@ public with sharing class GovPayIntegrationUtil {
 			paymentInfo.Refund_method__c = response.x_links.refunds.method;
 			paymentInfo.Cancel_URL__c = response.x_links.cancel.href;
 			paymentInfo.Cancel_method__c = response.x_links.cancel.method;
-			paymentInfo.Payment_Type__c = response.metadata.type;
-			paymentInfo.Payment_Number__c = response.metadata.paymentNumber;
+			//paymentInfo.Payment_Type__c = response.metadata.type;
+			//paymentInfo.Payment_Number__c = response.metadata.paymentNumber;
 
 			insert paymentInfo;
 		} catch (Exception e) {

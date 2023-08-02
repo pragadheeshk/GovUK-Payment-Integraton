@@ -27,9 +27,5 @@
 		<members>*</members>
 		<name>NamedCredential</name>
 	</types>
-	<types>
-        <members>GOVUK_pay</members>
-        <name>ExternalCredential</name>
-    </types>
 	<version>55.0</version>
 </Package>
