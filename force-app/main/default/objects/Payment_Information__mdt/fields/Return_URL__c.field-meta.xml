@@ -4,6 +4,6 @@
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
     <label>Return URL</label>
-    <required>true</required>
+    <required>false</required>
     <type>Url</type>
 </CustomField>
