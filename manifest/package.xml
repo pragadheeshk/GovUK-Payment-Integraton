@@ -24,8 +24,10 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>NamedCredential</name>
+		<members>Payment_Info__c-Payment Info Layout</members>
+		<members>Payment_Information__mdt-Payment Information Layout</members>
+		<name>Layout</name>
 	</types>
+
 	<version>55.0</version>
 </Package>
